@@ -34,8 +34,8 @@ class ContadorDeCaloriasTests: XCTestCase {
     func testFeijoadaPossoComerAindaHoje() {
         let counter = ContadorDeCaloria()
         
-        XCTAssert(counter.feijoadasAindaPossoComerHoje <= 4, "ERRO 1")
-        XCTAssert(counter.feijoadasAindaPossoComerHoje >= 0, "ERRO 2")
+        XCTAssert(counter.donutsAindaPossoComerHoje  <= 4, "ERRO 1")
+        XCTAssert(counter.donutsAindaPossoComerHoje >= 0, "ERRO 2")
         
     }
 

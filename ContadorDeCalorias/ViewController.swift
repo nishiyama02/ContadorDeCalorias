@@ -18,14 +18,13 @@ class ViewController: UIViewController {
         
     }
     
-    
 }
 
 class ContadorDeCaloria {
     
     let maxCaloriasPorDia: Int = 2000
     
-    let caloriasPorFeijoada: Int = 500
+    let caloriasPorDonuts: Int = 500
     
     private var totalCaloriasConsumidasHoje: Int = 0
     
@@ -33,7 +32,8 @@ class ContadorDeCaloria {
         totalCaloriasConsumidasHoje += caloriasToAdd
     }
     
-    var feijoadasAindaPossoComerHoje: Int {
-        return (maxCaloriasPorDia - totalCaloriasConsumidasHoje) / caloriasPorFeijoada
+    var donutsAindaPossoComerHoje: Int {
+        return (maxCaloriasPorDia - totalCaloriasConsumidasHoje) / caloriasPorDonuts
     }
+    
 }
